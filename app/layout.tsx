@@ -22,11 +22,20 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://fatcalico.vercel.app",
     siteName: "Fat Calico",
+    images: [
+      {
+        url: "https://fatcalico.vercel.app/fatbanner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Fat Calico - Build Your Creator Portfolio Website",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fat Calico - Build Your Creator Portfolio Website",
     description: "Get discovered and get chosen with your own professional portfolio.",
+    images: ["https://fatcalico.vercel.app/fatbanner.jpg"],
   },
 };
 
