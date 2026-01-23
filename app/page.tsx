@@ -1,127 +1,115 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
-export default function PortfolioPitch() {
-  const calico = "#E0C097";
-  const darkText = "#2D2D2D";
-  const lightBg = "#FAF9F6"; // Off-white/Alabaster for a luxury feel
-
+const Highlight = ({ children, color = 'orange' }: { children: ReactNode; color?: 'orange' | 'yellow' }) => {
+  const colorMap = {
+    orange: '#FF6B35',
+    yellow: '#FFD60A'
+  };
   return (
-    <main style={{ 
-      fontFamily: 'system-ui, sans-serif', 
-      backgroundColor: lightBg, 
-      color: darkText, 
-      padding: '40px 20px',
-      lineHeight: '1.6'
-    }}>
-      
-      {/* 2. HERO SECTION */}
-      <section style={{ textAlign: 'center', marginBottom: '80px', paddingTop: '40px' }}>
-        <h1 style={{ 
-          fontSize: '48px', 
-          fontWeight: '800', 
-          letterSpacing: '-1px', 
-          margin: '0',
-          textTransform: 'uppercase'
-        }}>
-          GET <span style={{ color: calico }}>DISCOVERED</span>.<br />
-          GET <span style={{ color: calico }}>PICKED</span>.
+    <span style={{ color: colorMap[color], fontWeight: 'bold' }}>
+      {children}
+    </span>
+  );
+};
+
+export default function Home() {
+  return (
+    <div style={{ backgroundColor: '#FFFFFF', color: '#000000', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      {/* BANNER */}
+      <div style={{ width: '100%', height: 'auto' }}>
+        <img
+          src="/fatbanner.png"
+          alt="Calico Banner"
+          style={{ width: '100%', height: 'auto', display: 'block' }}
+        />
+      </div>
+
+      {/* HERO */}
+      <section style={{ padding: '60px 24px', textAlign: 'center' }}>
+        <h1 style={{ fontSize: '48px', fontWeight: 'bold', margin: '0 0 16px 0', lineHeight: '1.2' }}>
+          <span style={{ color: '#FF6B35' }}>GET DISCOVERED</span>
+          <br />
+          <span style={{ color: '#FFD60A' }}>GET CHOSEN</span>
         </h1>
-        <p style={{ fontSize: '20px', marginTop: '20px', opacity: 0.8 }}>
-          Being ‘just another content creator’ does not get you picked.
-        </p>
       </section>
 
-      {/* 3. PROBLEM SECTION */}
-      <section style={{ 
-        backgroundColor: '#fff', 
-        padding: '40px', 
-        borderRadius: '24px', 
-        marginBottom: '40px',
-        boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
-      }}>
-        <h2 style={{ fontSize: '14px', color: calico, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
-          Section: You are not visible enough
+      {/* YOU ARE NOT VISIBLE ENOUGH */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#000000', color: '#FFFFFF' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '32px', textAlign: 'center' }}>
+          YOU ARE <Highlight color="orange">NOT VISIBLE</Highlight> ENOUGH
         </h2>
-        <ul style={{ listStyle: 'none', padding: 0, fontSize: '18px' }}>
-          {[
-            "It’s too hard for clients to find your best work.",
-            "Your link-in-bio is just a messy list of buttons.",
-            "You are just another creator profile on their feed.",
-            "‘DM for inquiries’ is one step too many for them.",
-            "The algorithm decides if you get seen or not.",
-            "Your best work 'disappears' after 48 hours."
-          ].map((item, i) => (
-            <li key={i} style={{ marginBottom: '15px', display: 'flex', alignItems: 'center' }}>
-              <span style={{ color: '#FF6B6B', marginRight: '10px' }}>✕</span> {item}
-            </li>
-          ))}
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6' }}>
+            Clients <Highlight color="orange">can't see</Highlight> your best work.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6' }}>
+            Your link-in-bio is just a <Highlight color="orange">messy list</Highlight>.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6' }}>
+            You <Highlight color="orange">look like everyone</Highlight> else online.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6' }}>
+            "<Highlight color="orange">DM me</Highlight>" is too much work for them.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6' }}>
+            The <Highlight color="orange">algorithm</Highlight> decides if you get seen.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '0px', lineHeight: '1.6' }}>
+            Your best posts <Highlight color="orange">disappear in 2 days</Highlight>.
+          </li>
         </ul>
       </section>
 
-      {/* 4. SOLUTION SECTION */}
-      <section style={{ 
-        backgroundColor: darkText, 
-        color: '#fff', 
-        padding: '40px', 
-        borderRadius: '24px', 
-        marginBottom: '60px'
-      }}>
-        <h2 style={{ fontSize: '14px', color: calico, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
-          Section: Make yourself visible
+      {/* MAKE YOURSELF VISIBLE */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#FFFFFF' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '32px', textAlign: 'center', color: '#000000' }}>
+          <Highlight color="orange">MAKE YOURSELF</Highlight> VISIBLE
         </h2>
-        <ul style={{ listStyle: 'none', padding: 0, fontSize: '18px' }}>
-          {[
-            "Let them click on your professional link.",
-            "Everything loads in 2 seconds.",
-            "Show them your best work first.",
-            "Show your niches instantly.",
-            "Showcase your true talent in an instant.",
-            "Get screened and hired for campaigns fast.",
-            "Your portfolio is always ready on your profile."
-          ].map((item, i) => (
-            <li key={i} style={{ marginBottom: '15px', display: 'flex', alignItems: 'center' }}>
-              <span style={{ color: calico, marginRight: '10px' }}>✓</span> {item}
-            </li>
-          ))}
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6', color: '#000000' }}>
+            Give them one <Highlight color="orange">clean link</Highlight> to click.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6', color: '#000000' }}>
+            It loads <Highlight color="yellow">fast—under 2 seconds</Highlight>!
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6', color: '#000000' }}>
+            Show your <Highlight color="orange">best content</Highlight> first.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6', color: '#000000' }}>
+            Let them know your <Highlight color="orange">niche</Highlight> right away.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '20px', lineHeight: '1.6', color: '#000000' }}>
+            Show your <Highlight color="orange">real talent</Highlight> in seconds.
+          </li>
+          <li style={{ fontSize: '18px', marginBottom: '0px', lineHeight: '1.6', color: '#000000' }}>
+            Brands can <Highlight color="orange">find and hire</Highlight> you faster.
+          </li>
         </ul>
       </section>
 
-      {/* THE SHILL / IMAGE SECTION */}
-      <section style={{ textAlign: 'center' }}>
-        <p style={{ fontStyle: 'italic', marginBottom: '20px' }}>This is the result:</p>
-        
-        {/* IMAGE PLACEHOLDER - Replace with your actual image component */}
-        <div style={{ 
-          border: `4px solid ${calico}`, 
-          borderRadius: '30px', 
-          overflow: 'hidden',
-          maxWidth: '400px',
-          margin: '0 auto',
-          boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
-        }}>
-          <img 
-            src="/your-annotated-image.png" 
-            alt="Website Breakdown" 
-            style={{ width: '100%', display: 'block' }} 
+      {/* THIS IS WHAT GETS YOU CHOSEN */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#000000' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '40px', textAlign: 'center', color: '#FFFFFF' }}>
+          THIS IS WHAT <Highlight color="yellow">GETS YOU CHOSEN</Highlight>
+        </h2>
+        <div style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', borderRadius: '12px', overflow: 'hidden' }}>
+          <iframe
+            src="https://player.cloudinary.com/embed/?cloud_name=dbcghcpes&public_id=Portfolio_preview_rhcsd2"
+            width="100%"
+            height="400"
+            style={{ border: 'none', borderRadius: '12px' }}
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            title="Portfolio Preview"
           />
         </div>
-
-        <button style={{
-          marginTop: '60px',
-          backgroundColor: calico,
-          color: '#fff',
-          padding: '20px 40px',
-          borderRadius: '50px',
-          fontSize: '20px',
-          fontWeight: 'bold',
-          border: 'none',
-          cursor: 'pointer',
-          boxShadow: `0 10px 20px rgba(224, 192, 151, 0.4)`
-        }}>
-          WHATSAPP ME TO START
-        </button>
       </section>
 
-    </main>
+      {/* WHY THIS GETS YOU CHOSEN */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#FFFFFF' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: 'bold', textAlign: 'center', color: '#000000' }}>
+          WHY THIS <Highlight color="orange">GETS YOU</Highlight> CHOSEN
+        </h2>
+      </section>
+    </div>
   );
 }
