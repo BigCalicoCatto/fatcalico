@@ -130,7 +130,7 @@ export default function Home() {
         <div style={{ maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto', display: 'flex', justifyContent: 'center' }}>
           <div style={{ width: '100%', maxWidth: '450px', aspectRatio: '828 / 1534' }}>
             <iframe
-              src="https://player.cloudinary.com/embed/?cloud_name=dbcghcpes&public_id=Portfolio_preview_rhcsd2"
+              src="https://player.cloudinary.com/embed/?cloud_name=dbcghcpes&public_id=Portfolio_preview_rhcsd2&autoplay=true&loop=true&muted=true"
               width="100%"
               height="100%"
               style={{ border: 'none', borderRadius: '16px', display: 'block' }}
