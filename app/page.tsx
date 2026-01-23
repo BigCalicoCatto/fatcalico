@@ -149,22 +149,22 @@ export default function Home() {
         
         <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why1.jpg" alt="Portfolio Example 1" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why1.jpg" alt="Creator portfolio website example - showcase niche instantly" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why2.jpg" alt="Portfolio Example 2" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why2.jpg" alt="Professional portfolio for content creators with organized links" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why3.jpg" alt="Portfolio Example 3" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why3.jpg" alt="Influencer portfolio website design - get discovered online" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why4.jpg" alt="Portfolio Example 4" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why4.jpg" alt="Creator portfolio template - convert followers to clients" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why5.jpg" alt="Portfolio Example 5" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why5.jpg" alt="Portfolio website for freelancers and digital creators" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
-            <img src="/why6.jpg" alt="Portfolio Example 6" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <img src="/why6.jpg" alt="Best portfolio website builder for content creators and influencers" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
         </div>
       </section>
