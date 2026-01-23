@@ -142,10 +142,34 @@ export default function Home() {
       </section>
 
       {/* WHY THIS GETS YOU CHOSEN */}
-      <section style={{ padding: '48px 24px', backgroundColor: '#FAFAFA' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', color: '#2C2C2C' }}>
+      <section style={{ padding: '48px 24px', backgroundColor: '#FFFFFF' }}>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#2C2C2C' }}>
           WHY THIS <Highlight color="orange">GETS YOU</Highlight> CHOSEN
         </h2>
+        
+        <div style={{ maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px' }}>
+          <img
+            src="/why1.jpg"
+            alt="Portfolio Breakdown"
+            style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}
+          />
+        </div>
+
+        <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div style={{ marginBottom: '16px' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#2C2C2C', marginBottom: '0px' }}>
+              <span style={{ marginRight: '8px' }}>🐾</span>
+              <Highlight color="orange">Showcase your niche</Highlight> in an instant
+            </h3>
+          </div>
+          
+          <div>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#2C2C2C', marginBottom: '0px' }}>
+              <span style={{ marginRight: '8px' }}>🐾</span>
+              All your <Highlight color="orange">messy links</Highlight> in one place
+            </h3>
+          </div>
+        </div>
       </section>
     </div>
   );
