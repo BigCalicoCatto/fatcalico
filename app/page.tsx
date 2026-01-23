@@ -147,27 +147,24 @@ export default function Home() {
           WHY THIS <Highlight color="orange">GETS YOU</Highlight> CHOSEN
         </h2>
         
-        <div style={{ maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px' }}>
-          <img
-            src="/why1.jpg"
-            alt="Portfolio Breakdown"
-            style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}
-          />
-        </div>
-
-        <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <div style={{ marginBottom: '16px' }}>
-            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#2C2C2C', marginBottom: '0px' }}>
-              <span style={{ marginRight: '8px' }}>🐾</span>
-              <Highlight color="orange">Showcase your niche</Highlight> in an instant
-            </h3>
+        <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why1.jpg" alt="Portfolio Example 1" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
-          
-          <div>
-            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#2C2C2C', marginBottom: '0px' }}>
-              <span style={{ marginRight: '8px' }}>🐾</span>
-              All your <Highlight color="orange">messy links</Highlight> in one place
-            </h3>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why2.jpg" alt="Portfolio Example 2" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          </div>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why3.jpg" alt="Portfolio Example 3" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          </div>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why4.jpg" alt="Portfolio Example 4" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          </div>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why5.jpg" alt="Portfolio Example 5" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          </div>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
+            <img src="/why6.jpg" alt="Portfolio Example 6" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
         </div>
       </section>
