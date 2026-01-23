@@ -147,7 +147,7 @@ export default function Home() {
           WHY THIS <Highlight color="orange">GETS YOU</Highlight> CHOSEN
         </h2>
         
-        <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+        <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
             <img src="/why1.jpg" alt="Portfolio Example 1" style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
