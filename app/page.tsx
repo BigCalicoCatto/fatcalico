@@ -390,6 +390,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer style={{ padding: '32px 24px', backgroundColor: '#2C2C2C', textAlign: 'center', borderTop: '1px solid #E8956F' }}>
+        <p style={{ fontSize: '14px', color: '#FAFAFA', margin: '0' }}>
+          © 2025 FatCalico&Co engineered by FatCalico&Co for FatCalico&Co
+        </p>
+      </footer>
     </div>
   );
 }
