@@ -1,14 +1,5 @@
 import { ReactNode } from 'react';
 
-const styles = `
-  .card-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
-    transition: all 0.3s ease;
-  }
-`;
-
-
 const Highlight = ({ children, color = 'orange' }: { children: ReactNode; color?: 'orange' | 'yellow' }) => {
   const colorMap = {
     orange: '#E8956F',
@@ -22,22 +13,19 @@ const Highlight = ({ children, color = 'orange' }: { children: ReactNode; color?
 };
 
 const Card = ({ children }: { children: ReactNode }) => (
-  <div 
-    className="card-item"
-    style={{
-      backgroundColor: '#FFFFFF',
-      padding: '8px 12px',
-      borderRadius: '12px',
-      marginBottom: '16px',
-      fontSize: '16px',
-      lineHeight: '1.5',
-      color: '#2C2C2C',
-      border: '2px solid #E8956F',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
-      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      cursor: 'pointer'
-    }}
-  >
+  <div style={{
+    backgroundColor: '#FFFFFF',
+    padding: '8px 12px',
+    borderRadius: '12px',
+    marginBottom: '16px',
+    fontSize: '16px',
+    lineHeight: '1.5',
+    color: '#2C2C2C',
+    border: '2px solid #E8956F',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    cursor: 'pointer'
+  }}>
     <span style={{ marginRight: '8px', fontSize: '20px' }}>🐾</span>
     {children}
   </div>
@@ -46,19 +34,18 @@ const Card = ({ children }: { children: ReactNode }) => (
 export default function Home() {
   return (
     <div style={{ backgroundColor: '#FAFAFA', color: '#2C2C2C', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-      <style>{styles}</style>
       {/* BANNER */}
       <div style={{ width: '100%', height: 'auto' }}>
         <img
           src="/fatbanner.png"
-          alt="Calico Banner"
+          alt="Fat Calico - Build Your Creator Portfolio Website"
           style={{ width: '100%', height: 'auto', display: 'block' }}
         />
       </div>
 
       {/* HERO */}
       <section style={{ padding: '48px 24px', textAlign: 'center' }}>
-        <h1 className="hero-title" style={{ fontSize: '42px', fontWeight: 'bold', margin: '0', lineHeight: '1.3', letterSpacing: '-1px' }}>
+        <h1 style={{ fontSize: '42px', fontWeight: 'bold', margin: '0', lineHeight: '1.3', letterSpacing: '-1px' }}>
           <div style={{ color: '#E8956F', marginBottom: '8px' }}>GET DISCOVERED</div>
           <div style={{ color: '#F4D35E' }}>GET CHOSEN</div>
         </h1>
@@ -71,24 +58,12 @@ export default function Home() {
         </h2>
         <div style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <Card>
-              Clients <Highlight color="orange">can't see</Highlight> your best work.
-            </Card>
-            <Card>
-              Your link-in-bio is just a <Highlight color="orange">messy list</Highlight>.
-            </Card>
-            <Card>
-              You <Highlight color="orange">look like everyone</Highlight> else online.
-            </Card>
-            <Card>
-              "<Highlight color="orange">DM me</Highlight>" is too much work for them.
-            </Card>
-            <Card>
-              The <Highlight color="orange">algorithm</Highlight> decides if you get seen.
-            </Card>
-            <Card>
-              Your best posts <Highlight color="orange">disappear in 2 days</Highlight>.
-            </Card>
+            <Card>Clients <Highlight color="orange">can't see</Highlight> your best work.</Card>
+            <Card>Your link-in-bio is just a <Highlight color="orange">messy list</Highlight>.</Card>
+            <Card>You <Highlight color="orange">look like everyone</Highlight> else online.</Card>
+            <Card>"<Highlight color="orange">DM me</Highlight>" is too much work for them.</Card>
+            <Card>The <Highlight color="orange">algorithm</Highlight> decides if you get seen.</Card>
+            <Card>Your best posts <Highlight color="orange">disappear in 2 days</Highlight>.</Card>
           </div>
         </div>
       </section>
@@ -100,24 +75,12 @@ export default function Home() {
         </h2>
         <div style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <Card>
-              Give them one <Highlight color="orange">clean link</Highlight> to click.
-            </Card>
-            <Card>
-              It loads <Highlight color="orange">fast—under 2 seconds</Highlight>!
-            </Card>
-            <Card>
-              Show your <Highlight color="orange">best content</Highlight> first.
-            </Card>
-            <Card>
-              Let them know your <Highlight color="orange">niche</Highlight> right away.
-            </Card>
-            <Card>
-              Show your <Highlight color="orange">real talent</Highlight> in seconds.
-            </Card>
-            <Card>
-              Brands can <Highlight color="orange">find and hire</Highlight> you faster.
-            </Card>
+            <Card>Give them one <Highlight color="orange">clean link</Highlight> to click.</Card>
+            <Card>It loads <Highlight color="orange">fast—under 2 seconds</Highlight>!</Card>
+            <Card>Show your <Highlight color="orange">best content</Highlight> first.</Card>
+            <Card>Let them know your <Highlight color="orange">niche</Highlight> right away.</Card>
+            <Card>Show your <Highlight color="orange">real talent</Highlight> in seconds.</Card>
+            <Card>Brands can <Highlight color="orange">find and hire</Highlight> you faster.</Card>
           </div>
         </div>
       </section>
@@ -146,7 +109,6 @@ export default function Home() {
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#2C2C2C' }}>
           WHY THIS <Highlight color="orange">GETS YOU</Highlight> CHOSEN
         </h2>
-        
         <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
           <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)' }}>
             <img src="/why1.jpg" alt="Creator portfolio website example - showcase niche instantly" style={{ width: '100%', height: 'auto', display: 'block' }} />
@@ -169,58 +131,172 @@ export default function Home() {
         </div>
       </section>
 
-      {/* YOU CAN ADD MORE */}
+{/* YOU CAN ADD MORE */}
       <section style={{ padding: '24px 24px', backgroundColor: '#FFFFFF' }}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#2C2C2C' }}>
           YOU CAN ADD <Highlight color="orange">MORE</Highlight> IN YOUR OWN WAY!
         </h2>
-        
         <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Brand Collaborations
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Comp Cards
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Rate Card
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Photoshoot Experiences
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Social Media Metrics
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Social Reviews
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Client Testimonials
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Media Kit Download Button
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Quick Form
             </div>
-            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Prefilled WhatsApp Message
             </div>
-            <div style={{ gridColumn: '1 / -1', backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+            <div style={{ gridColumn: '1 / -1', backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Many more — <span style={{ color: '#E8956F', fontWeight: 'bold' }}>everything can be included</span> and is discussable.
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#2C2C2C' }}>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '48px', color: '#FAFAFA' }}>
+          FAT CALICO & CO <Highlight color="yellow">PACKAGES</Highlight>
+        </h2>
+
+        <div style={{ maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr', gap: '24px' }}>
+          {/* RM100 Card */}
+          <div style={{ backgroundColor: '#FFFFFF', padding: '24px 16px', borderRadius: '16px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)' }}>
+            <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 20px 0', textAlign: 'center' }}>
+              RM100
+            </h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Free domain (yourname.vercel.app)</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Free hosting — no hidden fees</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Basic SEO (custom title + description)</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Mobile-perfect & fast-loading (under 2 seconds)</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Live in 48 hours after material submission</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Minimum 5 sections</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Gather & organize your content from your socials</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Social links + affiliate/CTA buttons included</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>One-tap contact button (WhatsApp or email)</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Fully customized: colors, fonts, vibe — just for you</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '0px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>3 revisions</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* RM150 Card */}
+          <div style={{ backgroundColor: '#FFFFFF', padding: '32px 24px', borderRadius: '16px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)' }}>
+            <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 24px 0', textAlign: 'center' }}>
+              RM150
+            </h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 32px 0' }}>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Your own .com domain (yourname.com)</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Free domain setup & connection</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Basic SEO + custom metadata</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Mobile-perfect & fast-loading</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Live in 24 hours after material submission</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Minimum 7 sections</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>I gather & organize your content</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Social + affiliate buttons</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>One-tap contact button</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>Fully customized: colors, fonts, vibe</span>
+              </li>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '0px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
+                <span>4 revisions</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
