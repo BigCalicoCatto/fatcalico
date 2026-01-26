@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode, useState, useEffect } from 'react';
 
 const Highlight = ({ children, color = 'orange' }: { children: ReactNode; color?: 'orange' | 'yellow' }) => {
