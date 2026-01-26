@@ -337,10 +337,9 @@ export default function Home() {
                 textDecoration: 'none',
                 textAlign: 'center',
                 cursor: 'pointer',
-                transition: 'background-color 0.3s ease'
+                transition: 'background-color 0.3s ease',
+                display: 'block'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
             >
               📧 Email
             </a>
@@ -360,10 +359,9 @@ export default function Home() {
                 textDecoration: 'none',
                 textAlign: 'center',
                 cursor: 'pointer',
-                transition: 'background-color 0.3s ease'
+                transition: 'background-color 0.3s ease',
+                display: 'block'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
             >
               💬 WhatsApp
             </a>
@@ -383,10 +381,9 @@ export default function Home() {
                 textDecoration: 'none',
                 textAlign: 'center',
                 cursor: 'pointer',
-                transition: 'background-color 0.3s ease'
+                transition: 'background-color 0.3s ease',
+                display: 'block'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
             >
               📷 Instagram DM
             </a>
