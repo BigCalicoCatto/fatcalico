@@ -177,51 +177,49 @@ export default function Home() {
         
         <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Brand Collaborations
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Comp Cards
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Rate Card
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Photoshoot Experiences
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Social Media Metrics
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Social Reviews
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Client Testimonials
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Media Kit Download Button
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Quick Form
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
+            <div style={{ backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
               <span style={{ fontSize: '20px' }}>🐾</span>
               Prefilled WhatsApp Message
             </div>
-            <div style={{ gridColumn: '1 / -1' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px' }}>
-                <span style={{ fontSize: '20px' }}>🐾</span>
-                Many more — <span style={{ color: '#E8956F', fontWeight: 'bold' }}>everything can be included</span> and is discussable.
-              </div>
+            <div style={{ gridColumn: '1 / -1', backgroundColor: '#FFFFFF', padding: '16px', borderRadius: '12px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', display: 'flex', alignItems: 'center', gap: '12px', color: '#2C2C2C', fontSize: '16px', transition: 'all 0.3s ease' }}>
+              <span style={{ fontSize: '20px' }}>🐾</span>
+              Many more — <span style={{ color: '#E8956F', fontWeight: 'bold' }}>everything can be included</span> and is discussable.
             </div>
           </div>
         </div>
