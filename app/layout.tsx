@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Fat Calico",
     images: [
       {
-        url: "https://fatcalico.vercel.app/fatbanner.jpg",
+        url: "https://fatcalico.vercel.app/fatcalicodev.jpg",
         width: 1200,
         height: 630,
         alt: "Fat Calico - Build Your Creator Portfolio Website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fat Calico - Build Your Creator Portfolio Website",
     description: "Get discovered and get chosen with your own professional portfolio.",
-    images: ["https://fatcalico.vercel.app/fatbanner.jpg"],
+    images: ["https://fatcalico.vercel.app/fatcalicodev.jpg"],
   },
 };
 
