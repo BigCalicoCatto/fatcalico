@@ -170,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* YOU CAN ADD MORE */}
-      <section style={{ padding: '48px 24px', backgroundColor: '#FFFFFF' }}>
+      <section style={{ padding: '24px 24px', backgroundColor: '#FFFFFF' }}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#2C2C2C' }}>
           YOU CAN ADD <Highlight color="orange">MORE</Highlight> IN YOUR OWN WAY!
         </h2>
