@@ -134,7 +134,7 @@ export default function Home() {
       {/* YOU CAN ADD MORE */}
       <section style={{ padding: '24px 24px', backgroundColor: '#FFFFFF' }}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#2C2C2C' }}>
-          YOU CAN ADD <Highlight color="orange">MORE</Highlight> IN YOUR OWN WAY!
+          YOU CAN ADD <Highlight color="orange">MORE</Highlight> ACCORDING TO YOUR NEEDS!
         </h2>
         <div style={{ maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
@@ -198,7 +198,7 @@ export default function Home() {
             <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 20px 0', textAlign: 'center' }}>
               RM100
             </h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0' }}>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
                 <span>Free domain (yourname.vercel.app)</span>
@@ -237,7 +237,7 @@ export default function Home() {
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>One-tap contact button (WhatsApp or email)</span>
+                <span>One-tap contact button</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
@@ -245,7 +245,7 @@ export default function Home() {
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '0px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>3 revisions</span>
+                <span>Up to 3 revisions</span>
               </li>
             </ul>
           </div>
@@ -255,18 +255,18 @@ export default function Home() {
             <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 20px 0', textAlign: 'center' }}>
               RM150
             </h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0' }}>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Your own <Highlight color="orange">.com domain</Highlight> (yourname.com)</span>
+                <span>Your own .com domain (yourname.com)</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Free domain setup & connection</span>
+                <span>Free domain setup & connection and hosting</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Basic SEO + custom metadata</span>
+                <span>Basic SEO (custom title + description)</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
@@ -278,31 +278,31 @@ export default function Home() {
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span><Highlight color="orange">Live in 24 hours</Highlight></span>
+                <span>Live in 24 hours after material submission</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Minimum <Highlight color="orange">7 sections</Highlight></span>
+                <span>Minimum 7 sections</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Gather & organize your content</span>
+                <span>Gather & organize your content from your socials</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Social + affiliate buttons</span>
+                <span>Social links + affiliate/CTA buttons included</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>One-tap WhatsApp contact</span>
+                <span>One-tap contact button</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Fully customized: colors, fonts, vibe</span>
+                <span>Fully customized: colors, fonts, vibes</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '0px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span><Highlight color="orange">4 revisions</Highlight></span>
+                <span>Up to 4 revisions</span>
               </li>
             </ul>
           </div>
