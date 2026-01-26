@@ -199,7 +199,7 @@ export default function Home() {
               RM100
             </h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
-              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+              <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '8px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
                 <span>Free domain (yourname.vercel.app)</span>
               </li>
@@ -247,11 +247,11 @@ export default function Home() {
           </div>
 
           {/* RM150 Card */}
-          <div style={{ backgroundColor: '#FFFFFF', padding: '32px 24px', borderRadius: '16px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)' }}>
-            <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 24px 0', textAlign: 'center' }}>
+          <div style={{ backgroundColor: '#FFFFFF', padding: '24px 16px', borderRadius: '16px', border: '2px solid #E8956F', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)' }}>
+            <h3 style={{ fontSize: '36px', fontWeight: 'bold', color: '#E8956F', margin: '0 0 20px 0', textAlign: 'center' }}>
               RM150
             </h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 32px 0' }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span style={{ fontSize: '18px', flexShrink: 0 }}>✨</span>
                 <span>Your own .com domain (yourname.com)</span>
@@ -297,6 +297,99 @@ export default function Home() {
                 <span>4 revisions</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section style={{ padding: '48px 24px', backgroundColor: '#FFFFFF' }}>
+        <div style={{ maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '48px', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: '#2C2C2C', marginBottom: '16px' }}>
+            READY TO GET <Highlight color="orange">DISCOVERED</Highlight>?
+          </h2>
+          <p style={{ fontSize: '18px', color: '#2C2C2C', lineHeight: '1.6', margin: '0' }}>
+            Stop waiting. Your portfolio is just one message away. <Highlight color="orange">Let's build something amazing together.</Highlight>
+          </p>
+        </div>
+
+        <div style={{ maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center' }}>
+          {/* Profile Picture */}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img
+              src="/fatcalicodev.jpg"
+              alt="Fat Calico"
+              style={{ width: '200px', height: '200px', borderRadius: '8px', objectFit: 'cover' }}
+            />
+          </div>
+
+          {/* CTA Buttons */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            <a
+              href="mailto:fatcalico.co@gmail.com?subject=Let's build my website!&body=Hi Fat Calico! Let's build my website!"
+              style={{
+                padding: '16px 24px',
+                backgroundColor: '#E8956F',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                textDecoration: 'none',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'background-color 0.3s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
+            >
+              📧 Email
+            </a>
+
+            <a
+              href="https://wa.me/60176218234?text=Hi%20Fat%20Calico!%20Let's%20build%20my%20website!"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '16px 24px',
+                backgroundColor: '#E8956F',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                textDecoration: 'none',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'background-color 0.3s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
+            >
+              💬 WhatsApp
+            </a>
+
+            <a
+              href="https://instagram.com/fatcalico.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '16px 24px',
+                backgroundColor: '#E8956F',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                textDecoration: 'none',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'background-color 0.3s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#D67A52'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E8956F'}
+            >
+              📷 Instagram DM
+            </a>
           </div>
         </div>
       </section>
