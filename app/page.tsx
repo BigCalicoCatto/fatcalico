@@ -258,7 +258,7 @@ export default function Home() {
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Your own .com domain</span>
+                <span>Your own <Highlight color="orange">.com domain</Highlight> (yourname.com)</span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
@@ -278,11 +278,11 @@ export default function Home() {
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Live in 24 hours</span>
+                <span><Highlight color="orange">Live in 24 hours</Highlight></span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>Minimum 5 sections</span>
+                <span>Minimum <Highlight color="orange">7 sections</Highlight></span>
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
@@ -302,7 +302,7 @@ export default function Home() {
               </li>
               <li style={{ fontSize: '15px', color: '#2C2C2C', marginBottom: '0px', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span>✨</span>
-                <span>4 revisions</span>
+                <span><Highlight color="orange">4 revisions</Highlight></span>
               </li>
             </ul>
           </div>
