@@ -631,7 +631,7 @@ function EagerToShow() {
         <p style={{
           fontSize: "clamp(15px, 2vw, 17px)",
           color: "rgba(26,26,26,0.65)", lineHeight: 1.78,
-          maxWidth: 560, margin: "0 auto 28px",
+          maxWidth: 560, margin: "0 auto 0",
         }}>
           Clients are eager to get to know you and your services.<br />
           You should be equally eager to show them.
@@ -642,14 +642,15 @@ function EagerToShow() {
           alt="Show clients everything"
           style={{
             width: "100%", maxWidth: 560, height: "auto",
-            display: "block", margin: "0 auto 28px",
+            display: "block", margin: "0 auto",
             borderRadius: 18, objectFit: "cover",
           }}
         />
 
         <div style={{
-          display: "inline-flex", flexDirection: "column", alignItems: "flex-start",
-          gap: 10, marginBottom: 28, textAlign: "left",
+          display: "grid", gridTemplateColumns: "1fr 1fr",
+          gap: "10px 24px", marginBottom: 28, textAlign: "left",
+          maxWidth: 380, margin: "0 auto 28px",
         }}>
           {showItems.map((item, i) => (
             <div key={i} style={{
@@ -825,16 +826,11 @@ function FinalCTA() {
       }} />
       <div style={{ position: "relative", zIndex: 1 }}>
         <div style={{ marginBottom: 20, display: "flex", justifyContent: "center" }}>
-          <div style={{
-            width: 60, height: 60, borderRadius: "50%",
-            background: "rgba(255,120,0,0.12)",
-            border: "2px solid rgba(255,120,0,0.3)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            animation: "float 3s ease-in-out infinite",
-          }}>
-            <Icon d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-              size={28} color="#ff7800" fill="rgba(255,120,0,0.2)" />
-          </div>
+          <img
+            src="/cta.webp"
+            alt=""
+            style={{ width: "100%", maxWidth: 480, height: "auto", display: "block", borderRadius: 18, objectFit: "cover" }}
+          />
         </div>
         <h2 style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
