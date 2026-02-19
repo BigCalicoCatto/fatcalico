@@ -613,36 +613,63 @@ function Stats() {
 
 // ─── Eager to Show ─────────────────────────────────────────────────────────────
 function EagerToShow() {
+  const showItems = [
+    "Location", "Services", "Packages", "Promotions",
+    "Experience", "Contact", "Many more",
+  ];
   return (
-    <section style={{ padding: "96px 24px", background: "#fff" }}>
+    <section style={{ padding: "48px 24px 48px", background: "#fff" }}>
       <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ marginBottom: 20, display: "flex", justifyContent: "center" }}>
-          <div style={{
-            width: 52, height: 52, borderRadius: "50%",
-            background: "rgba(255,120,0,0.1)",
-            border: "1.5px solid rgba(255,120,0,0.3)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            animation: "float 3s ease-in-out infinite",
-          }}>
-            <Icon d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-              size={22} color="#ff7800" fill="rgba(255,120,0,0.25)" />
-          </div>
-        </div>
         <h2 style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
           fontSize: "clamp(26px, 4vw, 42px)", color: "#1a1a1a",
-          lineHeight: 1.2, marginBottom: 24,
+          lineHeight: 1.2, marginBottom: 16,
         }}>
           Make it Easy for Clients<br />to Choose You.
         </h2>
+
         <p style={{
-          fontSize: "clamp(15px, 2vw, 18px)",
+          fontSize: "clamp(15px, 2vw, 17px)",
           color: "rgba(26,26,26,0.65)", lineHeight: 1.78,
-          maxWidth: 580, margin: "0 auto",
+          maxWidth: 560, margin: "0 auto 28px",
         }}>
-          Clients are eager to get to know you and your services. You should be equally eager to show them.
-          Don&apos;t hide your hard work behind a crowded social media feed —{" "}
-          <strong style={{ color: "#1a1a1a" }}>give your business a home.</strong>
+          Clients are eager to get to know you and your services.<br />
+          You should be equally eager to show them.
+        </p>
+
+        <img
+          src="/answer.webp"
+          alt="Show clients everything"
+          style={{
+            width: "100%", maxWidth: 560, height: "auto",
+            display: "block", margin: "0 auto 28px",
+            borderRadius: 18, objectFit: "cover",
+          }}
+        />
+
+        <div style={{
+          display: "inline-flex", flexDirection: "column", alignItems: "flex-start",
+          gap: 10, marginBottom: 28, textAlign: "left",
+        }}>
+          {showItems.map((item, i) => (
+            <div key={i} style={{
+              display: "flex", alignItems: "center", gap: 10,
+              fontSize: "clamp(15px, 2vw, 17px)",
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontWeight: 700, color: "#1a1a1a",
+            }}>
+              <span style={{ fontSize: 18 }}>🐾</span>
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <p style={{
+          fontSize: "clamp(14px, 1.8vw, 16px)",
+          color: "rgba(26,26,26,0.55)", lineHeight: 1.75,
+          maxWidth: 560, margin: "0 auto",
+        }}>
+          With everything all in one place, clients no longer have to dig through your social media for answers or risk being left hanging.
         </p>
       </div>
     </section>
@@ -731,7 +758,7 @@ const FAQS = [
 function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   return (
-    <section id="faq" style={{ padding: "96px 24px", background: "#fff" }}>
+    <section id="faq" style={{ padding: "38px 24px 96px", background: "#fff" }}>
       <div style={{ maxWidth: 720, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 52 }}>
           <span style={{
@@ -785,7 +812,7 @@ function FAQ() {
 function FinalCTA() {
   return (
     <section style={{
-      padding: "100px 24px",
+      padding: "40px 24px",
       background: "linear-gradient(135deg, #fff7f0 0%, #ffeedd 50%, #fff7f0 100%)",
       textAlign: "center", position: "relative", overflow: "hidden",
     }}>
