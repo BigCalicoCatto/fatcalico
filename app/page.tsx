@@ -199,7 +199,6 @@ function Navbar() {
         borderBottom: scrolled ? "1px solid rgba(0,0,0,0.08)" : "none",
         transition: "all 0.3s ease",
       }}>
-        {/* Logo — rectangle, no forced circle */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <img
             src="/fatoo.webp"
@@ -216,7 +215,6 @@ function Navbar() {
           </span>
         </div>
 
-        {/* Right icons */}
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <a
             href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer"
@@ -385,13 +383,13 @@ const PORTFOLIO = [
   { title: "Yasmin Nadia", sub: "Professional Personal Trainer", link: "https://yasminnadia.vercel.app", img: "/yasminnadia.webp" },
   { title: "Aina Athirah", sub: "Private Tutor", link: "https://ainaathirah.vercel.app", img: "/ainaathirah.webp" },
   { title: "Amirul Khoo", sub: "Professional Fitness Trainer", link: "https://amirulkhoo.vercel.app", img: "/amirulkhoo.webp" },
-  { title: "Emma Damia", sub: "Fashion & Beauty Content Creator", link: undefined, img: "/emmadamia.webp" },
+  { title: "Emma Damia", sub: "Fashion & Beauty Content Creator", link: "https://emmadamia.vercel.app", img: "/emmadamia.webp" },
 ];
 
 function Portfolio() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
-  const CARD_W = 220 + 16; // card width + gap
+  const CARD_W = 220 + 16;
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -412,7 +410,8 @@ function Portfolio() {
   };
 
   return (
-    <section id="portfolio" style={{ padding: "96px 0 80px", background: "#fafaf8" }}>
+    // 1. Top padding halved (96 → 48), bottom padding halved (80 → 40)
+    <section id="portfolio" style={{ padding: "48px 0 40px", background: "#fafaf8" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <span style={{
@@ -429,14 +428,13 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Full-bleed scroll area with side padding for peek */}
       <div style={{ paddingLeft: 24, paddingRight: 24 }}>
         <div ref={scrollRef} className="carousel-scroll">
           {PORTFOLIO.map((p, i) => (
             <a
               key={i}
-              href={p.link ?? "#"}
-              target={p.link ? "_blank" : "_self"}
+              href={p.link}
+              target="_blank"
               rel="noopener noreferrer"
               className="portfolio-card"
             >
@@ -455,18 +453,17 @@ function Portfolio() {
                 }}>{p.title}</div>
                 <div style={{ fontSize: 12, color: "rgba(255,255,255,0.72)", marginTop: 3 }}>{p.sub}</div>
               </div>
-              {p.link && (
-                <div style={{
-                  position: "absolute", top: 12, right: 12,
-                  background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)",
-                  borderRadius: 8, padding: "5px 10px",
-                  fontSize: 11, color: "#fff", fontWeight: 600,
-                  display: "flex", alignItems: "center", gap: 4,
-                }}>
-                  <Icon d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" size={11} />
-                  Live
-                </div>
-              )}
+              {/* 2. "View Live" badge shown on ALL cards */}
+              <div style={{
+                position: "absolute", top: 12, right: 12,
+                background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)",
+                borderRadius: 8, padding: "5px 10px",
+                fontSize: 11, color: "#fff", fontWeight: 600,
+                display: "flex", alignItems: "center", gap: 4,
+              }}>
+                <Icon d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" size={11} />
+                View Live
+              </div>
             </a>
           ))}
         </div>
@@ -487,9 +484,10 @@ function Portfolio() {
         ))}
       </div>
 
+      {/* 3. Orange "View All Portfolio Examples" button */}
       <div style={{ textAlign: "center", marginTop: 36, padding: "0 24px" }}>
-        <a href="#" className="light-btn" style={{ fontSize: 14 }}>
-          <Icon d="M4 6h16M4 10h16M4 14h8" size={16} color="#1a1a1a" />
+        <a href="#" className="light-btn light-btn-orange" style={{ fontSize: 14 }}>
+          <Icon d="M4 6h16M4 10h16M4 14h8" size={16} color="#cc5500" />
           View All Portfolio Examples
         </a>
       </div>
@@ -500,32 +498,34 @@ function Portfolio() {
 // ─── Fear Reduction ────────────────────────────────────────────────────────────
 function FearReduction() {
   return (
+    // 5. Solid colour lines, solid colour fonts, underline on EVERYTHING in second sentence
     <section style={{ background: "#fff7f0" }}>
-      <div style={{ height: 3, background: "linear-gradient(90deg, transparent, #ff7800, #ffd000, #ff7800, transparent)" }} />
+      <div style={{ height: 3, background: "#ff7800" }} />
       <div style={{ padding: "56px 24px", textAlign: "center", maxWidth: 820, margin: "0 auto" }}>
         <p style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
           fontSize: "clamp(18px, 3vw, 28px)", color: "#1a1a1a", lineHeight: 1.45,
         }}>
           Customers prefer to know{" "}
-          <span style={{
-            background: "linear-gradient(90deg, #ff7800, #ffb800)",
-            backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-          }}>EVERYTHING</span>{" "}
+          <span style={{ color: "#ff7800" }}>EVERYTHING</span>{" "}
           about a service or product before they buy.
         </p>
       </div>
-      <div style={{ height: 3, background: "linear-gradient(90deg, transparent, #ff7800, #ffd000, #ff7800, transparent)" }} />
+      <div style={{ height: 3, background: "#ff7800" }} />
       <div style={{ padding: "56px 24px", textAlign: "center", maxWidth: 820, margin: "0 auto" }}>
         <p style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
           fontSize: "clamp(18px, 3vw, 28px)", lineHeight: 1.45,
         }}>
           <span style={{ color: "#ff7800" }}>A website saves you from missing more clients</span>{" "}
-          <span style={{ color: "#1a1a1a" }}>by showing EVERYTHING.</span>
+          <span style={{ color: "#1a1a1a" }}>by showing{" "}
+            <span style={{ textDecoration: "underline", textDecorationColor: "#ff7800", textUnderlineOffset: "4px" }}>
+              EVERYTHING
+            </span>.
+          </span>
         </p>
       </div>
-      <div style={{ height: 3, background: "linear-gradient(90deg, transparent, #ff7800, #ffd000, #ff7800, transparent)" }} />
+      <div style={{ height: 3, background: "#ff7800" }} />
     </section>
   );
 }
@@ -539,7 +539,8 @@ const STATS = [
 
 function Stats() {
   return (
-    <section style={{ padding: "96px 24px", background: "#fafaf8" }}>
+    // 6. Top padding reduced by 60% (96 → ~38), bottom padding reduced by 50% (96 → 48)
+    <section style={{ padding: "38px 24px 48px", background: "#fafaf8" }}>
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
         <span style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11,
