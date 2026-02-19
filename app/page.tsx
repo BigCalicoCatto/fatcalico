@@ -486,7 +486,7 @@ function Portfolio() {
 
       {/* 3. Orange "View All Portfolio Examples" button */}
       <div style={{ textAlign: "center", marginTop: 36, padding: "0 24px" }}>
-        <a href="#" className="light-btn light-btn-orange" style={{ fontSize: 14 }}>
+        <a href="/portfolio" className="light-btn light-btn-orange" style={{ fontSize: 14 }}>
           <Icon d="M4 6h16M4 10h16M4 14h8" size={16} color="#cc5500" />
           View All Portfolio Examples
         </a>
