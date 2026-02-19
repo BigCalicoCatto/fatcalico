@@ -410,7 +410,6 @@ function Portfolio() {
   };
 
   return (
-    // 1. Top padding halved (96 → 48), bottom padding halved (80 → 40)
     <section id="portfolio" style={{ padding: "48px 0 40px", background: "#fafaf8" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
@@ -453,7 +452,6 @@ function Portfolio() {
                 }}>{p.title}</div>
                 <div style={{ fontSize: 12, color: "rgba(255,255,255,0.72)", marginTop: 3 }}>{p.sub}</div>
               </div>
-              {/* 2. "View Live" badge shown on ALL cards */}
               <div style={{
                 position: "absolute", top: 12, right: 12,
                 background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)",
@@ -484,7 +482,6 @@ function Portfolio() {
         ))}
       </div>
 
-      {/* 3. Orange "View All Portfolio Examples" button */}
       <div style={{ textAlign: "center", marginTop: 36, padding: "0 24px" }}>
         <a href="/portfolio" className="light-btn light-btn-orange" style={{ fontSize: 14 }}>
           <Icon d="M4 6h16M4 10h16M4 14h8" size={16} color="#cc5500" />
@@ -498,7 +495,6 @@ function Portfolio() {
 // ─── Fear Reduction ────────────────────────────────────────────────────────────
 function FearReduction() {
   return (
-    // 5. Solid colour lines, solid colour fonts, underline on EVERYTHING in second sentence
     <section style={{ background: "#fff7f0" }}>
       <div style={{ height: 3, background: "#ff7800" }} />
       <div style={{ padding: "56px 24px", textAlign: "center", maxWidth: 820, margin: "0 auto" }}>
@@ -532,14 +528,13 @@ function FearReduction() {
 
 // ─── Stats ─────────────────────────────────────────────────────────────────────
 const STATS = [
-  { num: "60%", label: "Increase in Reach" },
-  { num: "50%", label: "Increase in Inquiries" },
-  { num: "40%", label: "Increase in Conversion" },
+  { num: "60%", label: "Increase in Reach", img: "/reach.webp", imgPosition: "above" },
+  { num: "50%", label: "Increase in Inquiries", img: "/inqui.webp", imgPosition: "below" },
+  { num: "40%", label: "Increase in Conversion", img: "/conversion.webp", imgPosition: "above" },
 ];
 
 function Stats() {
   return (
-    // 6. Top padding reduced by 60% (96 → ~38), bottom padding reduced by 50% (96 → 48)
     <section style={{ padding: "38px 24px 48px", background: "#fafaf8" }}>
       <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
         <span style={{
@@ -564,7 +559,19 @@ function Stats() {
         }}>
           {STATS.map((s, i) => (
             <div key={i} style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 180 }}>
-              <div style={{ padding: "40px 36px", textAlign: "center", width: "100%" }}>
+              <div style={{
+                padding: "40px 36px", textAlign: "center", width: "100%",
+                display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+              }}>
+                {/* Image above the number */}
+                {s.imgPosition === "above" && (
+                  <img
+                    src={s.img}
+                    alt={s.label}
+                    style={{ width: 64, height: 64, objectFit: "contain", marginBottom: 16 }}
+                  />
+                )}
+
                 <div style={{
                   fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
                   fontSize: "clamp(52px, 7vw, 80px)", lineHeight: 1,
@@ -573,7 +580,19 @@ function Stats() {
                 }}>
                   {s.num}
                 </div>
-                <div style={{ color: "rgba(26,26,26,0.6)", fontSize: 14, marginTop: 10, fontWeight: 500 }}>{s.label}</div>
+
+                <div style={{ color: "rgba(26,26,26,0.6)", fontSize: 14, marginTop: 10, fontWeight: 500 }}>
+                  {s.label}
+                </div>
+
+                {/* Image below the label */}
+                {s.imgPosition === "below" && (
+                  <img
+                    src={s.img}
+                    alt={s.label}
+                    style={{ width: 64, height: 64, objectFit: "contain", marginTop: 16 }}
+                  />
+                )}
               </div>
               {i < STATS.length - 1 && (
                 <div style={{ width: 1, background: "rgba(0,0,0,0.07)", alignSelf: "stretch", flexShrink: 0 }} />
