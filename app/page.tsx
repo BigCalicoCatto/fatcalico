@@ -653,30 +653,27 @@ function EagerToShow() {
 const STEPS = [
   {
     num: "01",
-    icon: "M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z",
     title: "WhatsApp Us",
     desc: "Send your details, logo, and photos. We'll get the ball rolling right away.",
-    iconBg: "#fff7f0", accent: "#ff7800",
+    img: "/ws.webp",
   },
   {
     num: "02",
-    icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H4a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-1",
     title: "We Build & Refine",
     desc: "We design your site and work with you on changes. You get 3 revisions included.",
-    iconBg: "#f0f7ff", accent: "#1a7aff",
+    img: "/dev.webp",
   },
   {
     num: "03",
-    icon: "M5 3l14 9-14 9V3z",
     title: "Go Live",
     desc: "Pay your RM100 and we launch your site officially. Fast, simple, done.",
-    iconBg: "#f0fff4", accent: "#18a34a",
+    img: "/paid.webp",
   },
 ];
 
 function HowItWorks() {
   return (
-    <section id="how-it-works" style={{ padding: "96px 24px", background: "#fafaf8" }}>
+    <section id="how-it-works" style={{ padding: "38px 24px 96px", background: "#fafaf8" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 60 }}>
           <span style={{
@@ -693,28 +690,25 @@ function HowItWorks() {
 
         <div style={{ display: "flex", gap: 20, flexWrap: "wrap", justifyContent: "center" }}>
           {STEPS.map((s, i) => (
-            <div key={i} className="step-box">
-              <div style={{
-                width: 52, height: 52, borderRadius: 14,
-                background: s.iconBg,
-                border: `1.5px solid ${s.accent}30`,
-                display: "flex", alignItems: "center", justifyContent: "center",
-                marginBottom: 20,
-              }}>
-                <Icon d={s.icon} size={22} color={s.accent} />
+            <div key={i} className="step-box" style={{ padding: 0, overflow: "hidden" }}>
+              <img
+                src={s.img}
+                alt={s.title}
+                style={{ width: "100%", height: "auto", display: "block", objectFit: "cover" }}
+              />
+              <div style={{ padding: "18px 20px 22px" }}>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 8 }}>
+                  <span style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
+                    fontSize: 13, color: "#ff7800", letterSpacing: "0.05em",
+                  }}>{s.num}</span>
+                  <h3 style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700,
+                    fontSize: 17, color: "#1a1a1a", margin: 0,
+                  }}>{s.title}</h3>
+                </div>
+                <p style={{ fontSize: 13, color: "rgba(26,26,26,0.6)", lineHeight: 1.7, margin: 0 }}>{s.desc}</p>
               </div>
-              <div style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
-                fontSize: 38, lineHeight: 1, color: `${s.accent}20`,
-                marginBottom: 12,
-              }}>
-                {s.num}
-              </div>
-              <h3 style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700,
-                fontSize: 19, color: "#1a1a1a", marginBottom: 10,
-              }}>{s.title}</h3>
-              <p style={{ fontSize: 14, color: "rgba(26,26,26,0.6)", lineHeight: 1.7 }}>{s.desc}</p>
             </div>
           ))}
         </div>
