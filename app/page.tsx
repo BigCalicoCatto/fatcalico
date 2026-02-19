@@ -558,9 +558,9 @@ function Stats() {
           overflow: "hidden",
         }}>
           {STATS.map((s, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 180 }}>
+            <div key={i} style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 160 }}>
               <div style={{
-                padding: "40px 36px", textAlign: "center", width: "100%",
+                padding: 0, textAlign: "center", width: "100%",
                 display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
               }}>
                 {/* Image above the number */}
@@ -568,21 +568,23 @@ function Stats() {
                   <img
                     src={s.img}
                     alt={s.label}
-                    style={{ width: 64, height: 64, objectFit: "contain", marginBottom: 16 }}
+                    style={{ width: "100%", height: "auto", objectFit: "cover", display: "block" }}
                   />
                 )}
 
-                <div style={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
-                  fontSize: "clamp(52px, 7vw, 80px)", lineHeight: 1,
-                  background: "linear-gradient(135deg, #ff7800, #ffb800)",
-                  backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-                }}>
-                  {s.num}
-                </div>
+                <div style={{ padding: "14px 8px 4px" }}>
+                  <div style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800,
+                    fontSize: "clamp(64px, 10vw, 100px)", lineHeight: 1,
+                    background: "linear-gradient(135deg, #ff7800, #ffb800)",
+                    backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                  }}>
+                    {s.num}
+                  </div>
 
-                <div style={{ color: "rgba(26,26,26,0.6)", fontSize: 14, marginTop: 10, fontWeight: 500 }}>
-                  {s.label}
+                  <div style={{ color: "rgba(26,26,26,0.6)", fontSize: 14, marginTop: 6, fontWeight: 500, paddingBottom: s.imgPosition === "below" ? 0 : 14 }}>
+                    {s.label}
+                  </div>
                 </div>
 
                 {/* Image below the label */}
@@ -590,7 +592,7 @@ function Stats() {
                   <img
                     src={s.img}
                     alt={s.label}
-                    style={{ width: 64, height: 64, objectFit: "contain", marginTop: 16 }}
+                    style={{ width: "100%", height: "auto", objectFit: "cover", display: "block" }}
                   />
                 )}
               </div>
