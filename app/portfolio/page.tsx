@@ -178,7 +178,7 @@ function Navbar() {
         <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
           <img
             src="/fatoo.webp"
-            alt="Fat Calico & Co"
+            alt="Fat Calico & Co logo"
             style={{ height: 38, width: "auto", borderRadius: 8, objectFit: "cover" }}
           />
           <span style={{
@@ -272,6 +272,7 @@ const PROJECTS = [
     sub: "F&B Business Landing Page",
     link: "https://uncleroll.vercel.app",
     img: "/uncleroll.webp",
+    imgAlt: "Uncle Roll F&B business website built by Fat Calico & Co Malaysia for RM100",
     description: "A complete digital storefront for a local F&B brand — everything a hungry customer needs to find, order, and show up.",
     featureGroups: [
       {
@@ -291,6 +292,7 @@ const PROJECTS = [
     sub: "Professional Personal Trainer",
     link: "https://yasminnadia.vercel.app",
     img: "/yasminnadia.webp",
+    imgAlt: "Yasmin Nadia personal trainer website built by Fat Calico & Co Malaysia for RM100",
     description: "A polished personal brand page that converts visitors into paying clients — showcasing expertise, results, and everything in between.",
     featureGroups: [
       {
@@ -315,6 +317,7 @@ const PROJECTS = [
     sub: "Private Tutor",
     link: "https://ainaathirah.vercel.app",
     img: "/ainaathirah.webp",
+    imgAlt: "Aina Athirah private tutor website built by Fat Calico & Co Malaysia for RM100",
     description: "A trustworthy, parent-friendly site that shows qualifications, services, and real student success — so parents book with confidence.",
     featureGroups: [
       {
@@ -334,6 +337,7 @@ const PROJECTS = [
     sub: "Professional Fitness Trainer",
     link: "https://amirulkhoo.vercel.app",
     img: "/amirulkhoo.webp",
+    imgAlt: "Amirul Khoo fitness trainer website built by Fat Calico & Co Malaysia for RM100",
     description: "A high-energy personal brand that commands authority in the fitness space — clients see the results, feel the expertise, and commit.",
     featureGroups: [
       {
@@ -358,6 +362,7 @@ const PROJECTS = [
     sub: "Fashion & Beauty Content Creator",
     link: "https://emmadamia.vercel.app",
     img: "/emmadamia.webp",
+    imgAlt: "Emma Damia fashion and beauty content creator website built by Fat Calico & Co Malaysia for RM100",
     description: "A media-ready creator profile that speaks directly to brands — with everything they need to pitch, book, and collab in one place.",
     featureGroups: [
       {
@@ -413,7 +418,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
         rel="noopener noreferrer"
         className="img-overlay-link"
       >
-        <img src={project.img} alt={project.title} />
+        <img src={project.img} alt={project.imgAlt} />
         <div className="overlay-gradient">
           <div style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
