@@ -202,7 +202,7 @@ function Navbar() {
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <img
             src="/fatoo.webp"
-            alt="Fat Calico & Co"
+            alt="Fat Calico & Co logo"
             style={{ height: 38, width: "auto", borderRadius: 8, objectFit: "cover" }}
           />
           <span style={{
@@ -297,7 +297,7 @@ function Hero() {
       display: "flex", alignItems: "center", justifyContent: "center",
       overflow: "hidden",
     }}>
-      <img src="/hero.webp" alt="" style={{
+      <img src="/hero.webp" alt="Professional website design Malaysia by Fat Calico & Co" style={{
         position: "absolute", inset: 0, width: "100%", height: "100%",
         objectFit: "cover", objectPosition: "center",
       }} />
@@ -438,7 +438,8 @@ function Portfolio() {
               className="portfolio-card"
             >
               <img
-                src={p.img} alt={p.title}
+                src={p.img}
+                alt={`${p.title} - ${p.sub} website built by Fat Calico & Co`}
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
               <div style={{
@@ -563,11 +564,10 @@ function Stats() {
                 padding: 0, textAlign: "center", width: "100%",
                 display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
               }}>
-                {/* Image above the number */}
                 {s.imgPosition === "above" && (
                   <img
                     src={s.img}
-                    alt={s.label}
+                    alt={`${s.label} after getting a website - Fat Calico & Co client result`}
                     style={{ width: "100%", height: "auto", objectFit: "cover", display: "block" }}
                   />
                 )}
@@ -587,11 +587,10 @@ function Stats() {
                   </div>
                 </div>
 
-                {/* Image below the label */}
                 {s.imgPosition === "below" && (
                   <img
                     src={s.img}
-                    alt={s.label}
+                    alt={`${s.label} after getting a website - Fat Calico & Co client result`}
                     style={{ width: "100%", height: "auto", objectFit: "cover", display: "block" }}
                   />
                 )}
@@ -639,7 +638,7 @@ function EagerToShow() {
 
         <img
           src="/answer.webp"
-          alt="Show clients everything"
+          alt="Everything your clients want to know — services, packages, location, contact — all in one website"
           style={{
             width: "100%", maxWidth: 560, height: "auto",
             display: "block", margin: "0 auto",
@@ -684,18 +683,21 @@ const STEPS = [
     title: "WhatsApp Us",
     desc: "Send your details, logo, and photos. We'll get the ball rolling right away.",
     img: "/ws.webp",
+    imgAlt: "Step 1 - WhatsApp Fat Calico & Co to start building your website",
   },
   {
     num: "02",
     title: "We Build & Refine",
     desc: "We design your site and work with you on changes. You get 3 revisions included.",
     img: "/dev.webp",
+    imgAlt: "Step 2 - Fat Calico & Co builds and refines your website with 3 free revisions",
   },
   {
     num: "03",
     title: "Go Live",
     desc: "Pay your RM100 and we launch your site officially. Fast, simple, done.",
     img: "/paid.webp",
+    imgAlt: "Step 3 - Pay RM100 and your website goes live instantly",
   },
 ];
 
@@ -721,7 +723,7 @@ function HowItWorks() {
             <div key={i} className="step-box" style={{ padding: 0, overflow: "hidden" }}>
               <img
                 src={s.img}
-                alt={s.title}
+                alt={s.imgAlt}
                 style={{ width: "100%", height: "auto", display: "block", objectFit: "cover" }}
               />
               <div style={{ padding: "18px 20px 22px" }}>
@@ -828,7 +830,7 @@ function FinalCTA() {
         <div style={{ marginBottom: 20, display: "flex", justifyContent: "center" }}>
           <img
             src="/cta.webp"
-            alt=""
+            alt="Get your professional website for just RM100 — no contracts, no hidden fees"
             style={{ width: "100%", maxWidth: 480, height: "auto", display: "block", borderRadius: 18, objectFit: "cover" }}
           />
         </div>
