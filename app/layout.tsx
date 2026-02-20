@@ -13,28 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fat Calico - Build Your Creator Portfolio Website | Get Discovered, Get Chosen",
-  description: "Stop being invisible on social media. Build a professional portfolio website that showcases your niche and gets you hired. RM 100 one-time, no subscriptions. Perfect for content creators, influencers, and freelancers.",
-  keywords: "portfolio website, creator portfolio, portfolio builder, content creator website, influencer portfolio, freelancer portfolio, portfolio for creators",
+  title: "Fat Calico & Co | High-Quality Sites Just RM100",
+  description:
+    "Need a website? RM100 one-time – mobile-friendly, free hosting/domain forever. No hidden fees. Look premium without the price tag!",
+  keywords:
+    "website design Malaysia, affordable website RM100, buat website murah Malaysia, cheap website builder Malaysia, portfolio website, content creator website, freelancer website, alternative to Linktree, no monthly fee website, one time payment website, free domain website Malaysia",
   openGraph: {
-    title: "Fat Calico - Build Your Creator Portfolio Website",
-    description: "Get discovered and get chosen with your own professional portfolio. Showcase your niche, organize your links, and attract clients.",
+    title: "Fat Calico & Co | High-Quality Sites Just RM100",
+    description:
+      "Need a website? RM100 one-time – mobile-friendly, free hosting/domain forever. No hidden fees. Look premium without the price tag!",
     type: "website",
     url: "https://fatcalico.vercel.app",
-    siteName: "Fat Calico",
+    siteName: "Fat Calico & Co",
     images: [
       {
         url: "https://fatcalico.vercel.app/fatcalicodev.jpg",
         width: 1200,
         height: 630,
-        alt: "Fat Calico - Build Your Creator Portfolio Website",
+        alt: "Fat Calico & Co | High-Quality Sites Just RM100",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fat Calico - Build Your Creator Portfolio Website",
-    description: "Get discovered and get chosen with your own professional portfolio.",
+    title: "Fat Calico & Co | High-Quality Sites Just RM100",
+    description:
+      "Need a website? RM100 one-time – mobile-friendly, free hosting/domain forever. No hidden fees. Look premium without the price tag!",
     images: ["https://fatcalico.vercel.app/fatcalicodev.jpg"],
   },
 };
@@ -46,7 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
